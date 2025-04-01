@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9ecef;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h3 class="text-center">Customer Login</h3>
+        <form action="CustomerLoginServlet" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Login</button>
+        </form>
+        
+        <p class="text-center mt-3">
+            <a href="customerRegister.jsp" class="btn btn-primary w-100">New User? Register Here</a>
+        </p>
+
+        <p class="text-center mt-3">
+            <a href="index.jsp">Back to Main Page</a>
+        </p>
+    </div>
+</body>
+</html>

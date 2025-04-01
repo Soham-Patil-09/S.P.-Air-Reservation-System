@@ -1,0 +1,18 @@
+ARS Login Details-
+
+Admin-
+pooja.patil@airmumbai.com
+secure@321
+
+MAnger-
+sandeep.joshi@indigo.com
+manager@pass
+
+Staff-
+amit.pawar@goair.com
+staff@123
+
+("jdbc:mysql://localhost:3306/ars_db", "root", "123456789");
+
+
+
